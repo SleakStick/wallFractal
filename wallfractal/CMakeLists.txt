@@ -4,6 +4,9 @@ project(plasma-wallfractal)
  
 find_package(ECM 1.4.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
+set(QT_MAJOR_VERSION 6 CACHE STRING "" FORCE)
+set(INTERFACE_QT_MAJOR_VERSION 6 CACHE STRING "" FORCE)
+set(QUERY_EXECUTABLE "/usr/bin/qmake" CACHE FILEPATH "" FORCE)
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
